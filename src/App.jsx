@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css'
+import Home from './pages/Home';
+import Basket from './pages/Basket';
 
 function App() {
   return (
-  <Router>
-    <Routes>
-      <Route />
-    </Routes>
-  </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/basket" element={<Basket />} />
+      </Routes>
+    </Router>
   );
 }
 
