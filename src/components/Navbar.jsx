@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="flex flex-row justify-evenly mt-2 pt-4 text-lg font-medium">
       <Link to="/">Home</Link>
-      <Link to="basket">Basket</Link>
+      <Link to="Cart">Cart</Link>
     </div>
   )
 }
