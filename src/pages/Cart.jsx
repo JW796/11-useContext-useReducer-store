@@ -8,4 +8,4 @@ const Cart = () => {
   )
 }
 
-export default Basket
+export default Cart
