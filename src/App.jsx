@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
-import Basket from './pages/Cart';
+import Cart from './pages/Cart';
 import { StoreProvider } from "./context-and-reducer/StoreContext";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/basket" element={<Basket />} />
+          <Route path="/Cart" element={<Cart />} />
         </Routes>
       </Router>
     </StoreProvider>

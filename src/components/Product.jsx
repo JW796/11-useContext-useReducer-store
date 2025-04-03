@@ -5,9 +5,9 @@ const Product = ({ item }) => {
     const {addToBasket} = useContext(StoreContext);
 
     const handleAdd = () => {
-      addToBasket(item)
+      addToBasket(item);
     }
-    
+
   return (
     <div className="mx-auto px-8 border border-gray-200 rounded-lg">
       <img src={item.image} alt="glasses" />
