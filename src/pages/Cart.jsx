@@ -7,7 +7,7 @@ const Cart = () => {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className="flex flex-row items-center justify-between mt-2 py-6 px-10 text-xl font-medium">
         <h3>Your Cart</h3>
         <p>Total ${total}</p>
       </div>
