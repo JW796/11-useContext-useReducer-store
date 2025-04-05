@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import Navbar from "../components/Navbar";
 import { StoreContext } from "../context-and-reducer/StoreContext";
+import BasketProduct from "../components/BasketProduct";
 
 const Cart = () => {
-  const { total } = useContext(StoreContext);
+  const { products, total } = useContext(StoreContext);
   return (
     <div>
       <Navbar />
@@ -11,6 +12,12 @@ const Cart = () => {
         <h3>Your Cart</h3>
         <p>Total ${total}</p>
       </div>
+      {products.map((product, i) => (
+        <BasketProduct 
+          key={i} 
+          item={product} 
+        />
+      ))}
     </div>
   );
 };
