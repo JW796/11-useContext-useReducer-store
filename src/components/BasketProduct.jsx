@@ -8,7 +8,7 @@ const BasketProduct = ({item}) => {
         <p>{item.name}</p>
         <p>${item.price.toFixed(2)}</p>
       </div>
-      <button>
+      <button className='bg-gray-500 text-white text-lg font-medium rounded-lg p-4 hover:bg-red-500'>
         Remove
       </button>
     </div>
