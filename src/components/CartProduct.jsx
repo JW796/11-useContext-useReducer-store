@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { StoreContext } from "../context-and-reducer/StoreContext";
 
-const BasketProduct = ({ item }) => {
+const CartProduct = ({ item }) => {
   const { removeFromBasket } = useContext(StoreContext);
 
   const handleRemove = () => {
@@ -28,4 +28,4 @@ const BasketProduct = ({ item }) => {
   );
 };
 
-export default BasketProduct;
+export default CartProduct;
